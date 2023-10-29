@@ -14,6 +14,7 @@ then
         --prefix=$prefix --target=$target --disable-nls --disable-werror \
 	--enable-lto --enable-plugins \
 	--enable-poison-system-directories \
+	--enable-generated-files-in-srcdir \
 	$CROSS_PARAMS \
         || { echo "Error configuring binutils"; exit 1; }
 	touch configured-binutils
@@ -53,6 +54,7 @@ then
 		--disable-libstdcxx-verbose \
 		--enable-poison-system-directories \
 		--enable-interwork --enable-multilib \
+		--enable-generated-files-in-srcdir \
 		--enable-threads --disable-win32-registry --disable-nls --disable-debug\
 		--disable-libmudflap --disable-libssp --disable-libgomp \
 		--disable-libstdcxx-pch \
@@ -108,6 +110,7 @@ then
 	--disable-newlib-supplied-syscalls \
 	--enable-newlib-mb \
 	--disable-newlib-wide-orient \
+	--enable-generated-files-in-srcdir \
 	--target=$target \
 	--prefix=$prefix \
 	|| { echo "Error configuring newlib"; exit 1; }

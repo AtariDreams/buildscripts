@@ -34,7 +34,7 @@ DKPPC_RULES_VER=1.2.1
 
 DKA64_RULES_VER=1.1.1
 
-OSXMIN=${OSXMIN:-10.9}
+OSXMIN=${OSXMIN:-11.0}
 
 #---------------------------------------------------------------------------------
 function extract_and_patch {
